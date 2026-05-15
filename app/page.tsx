@@ -1,5 +1,5 @@
-import App from "./App";
+import Translator from "@/components/Translator";
 
 export default function Home() {
-  return <App />;
+  return <Translator />;
 }
