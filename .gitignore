@@ -41,5 +41,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# curator data (preferences, daily batches, feedback log)
-/data/
+# NOTE: data/curator はモバイル(Claude Code)セッション間で学習を同期するため
+# 意図的にGit管理しています(gitignoreしない)
