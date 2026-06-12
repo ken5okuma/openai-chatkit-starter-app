@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# NOTE: data/curator はモバイル(Claude Code)セッション間で学習を同期するため
+# 意図的にGit管理しています(gitignoreしない)

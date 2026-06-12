@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AgentKit demo",
-  description: "Demo of ChatKit with hosted workflow",
+  title: "AIニュースキュレーター",
+  description:
+    "毎日のAIニュースを収集・スコアリングし、スワイプのフィードバックで自分好みに育てるキュレーター",
 };
 
 export default function RootLayout({
