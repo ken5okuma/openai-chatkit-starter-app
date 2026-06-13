@@ -35,7 +35,11 @@ function runCommand(
   timeoutMs: number,
 ): Promise<string> {
   return new Promise((resolve, reject) => {
-    const child = spawn(cmd, args, { stdio: ["pipe", "pipe", "pipe"] });
+    // Windowsではnpmグローバルのコマンドが claude.cmd 形式のため shell経由で起動する
+    const child = spawn(cmd, args, {
+      stdio: ["pipe", "pipe", "pipe"],
+      shell: process.platform === "win32",
+    });
     let stdout = "";
     let stderr = "";
     const timer = setTimeout(() => {
